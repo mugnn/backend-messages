@@ -1,0 +1,40 @@
+{
+  "name": "glost_back-end",
+  "version": "1.0.0",
+  "description": "About",
+  "main": "./src/server.ts",
+  "scripts": {
+    "start": "pm2 start ecosystem.config.js --no-daemon",
+    "run": "pm2 start ecosystem.config.js",
+    "dev": "ts-node-dev --respawn --transpile-only src/server.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gusmaooleo/Glost.git"
+  },
+  "keywords": [
+    "glost"
+  ],
+  "author": "Leonardo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gusmaooleo/Glost/issues"
+  },
+  "homepage": "https://github.com/gusmaooleo/Glost#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "luxon": "^3.5.0",
+    "mongoose": "^8.6.0",
+    "pusher": "^5.2.0",
+    "socket.io": "^4.7.5"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.5.1",
+    "sucrase": "^3.35.0",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.5.4"
+  }
+}
